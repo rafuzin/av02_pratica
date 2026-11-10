@@ -1,27 +1,27 @@
-import { jogosRepository } from "../repository/jogo.repository.js";
+import { jogoRepository } from "../repository/jogo.repository.js";
 
-class JogosServices {
+class JogoServices {
     async getall() {
-        return jogosRepository.getAll()
+        return jogoRepository.getAll()
     }
 
     async getById(id) {
-        return jogosRepository.getById(id)
+        return jogoRepository.getById(id)
     }
 
     async create(dados) {
-        return jogosRepository.create(dados)
+        return jogoRepository.create(dados)
     }
 
     async update(id) {
 
-        return jogosRepository.update(id)
+        return jogoRepository.update(id)
     }
 
     async delete(id) {
 
-        return jogosRepository.delete(id)
+        return jogoRepository.delete(id)
     }
 }
 
-export const jogosServices = new JogosServices();
+export const jogoServices = new JogoServices();
